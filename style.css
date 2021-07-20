@@ -35,26 +35,29 @@ textarea{
   height: 80px;
   border-top: 1px solid white;;
 }
-
+/*centered text*/
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
 }
-
+/*changed font color to black, it was hard to see and example had black color for font*/
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: black;
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: black;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
 
 .saveBtn {
@@ -64,8 +67,13 @@ textarea{
   background-color: #06AED5;
   color: white;
 }
-
-.saveBtn i:hover {
+/*added font color black like the example, made it on hover, it worked better for me*/
+/*deleted the i:hover, didn't know what it was for*/
+.saveBtn:hover {
   font-size: 20px;
+  color: black;
   transition: all .3s ease-in-out;
+}
+#currentDay {
+  font-weight: bold;
 }

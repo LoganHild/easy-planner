@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Work Day Scheduler</title>
   </head>
 
@@ -31,50 +32,52 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="input-group mb-3 input-group-lg">
-        <span class="input-group-text">9AM</span>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        <button class="input-group-text">Save</button>
+      <!--displays timeblocks for standard business hours-->
+      <div class = "row timeblock">
+        <span id = "nineAM" class="hour"></span>
+        <input type="text" class="textarea past" data-hour="9" aria-label="Dollar amount (with dot and two decimal places)">
+        <!--changed class to have alert green color from bootstrap alerts, changed bottom span to button(for all)-->
+        <button class="saveBtn i">Save</button>
       </div>
-      <div class="input-group mb-3 input-group-lg">
-        <span class="input-group-text">10AM</span>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        <button class="input-group-text">Save</button>
+      <div class="row timeblock">
+        <span id = "tenAM" class="hour"></span>
+        <input type="text" class="textarea present" data-hour="10" aria-label="Dollar amount (with dot and two decimal places)">
+        <button class="saveBtn">Save</button>
       </div>
-      <div class="input-group mb-3 input-group-lg">
-        <span class="input-group-text">11AM</span>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        <button class="input-group-text">Save</button>
+      <div class="row timeblock">
+        <span id = "elevenAM" class="hour"></span>
+        <input type="text" class="textarea future" data-hour="11"  aria-label="Dollar amount (with dot and two decimal places)">
+        <button class="saveBtn">Save</button>
       </div>
-      <div class="input-group mb-3 input-group-lg">
-        <span class="input-group-text">12PM</span>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        <button class="input-group-text">Save</button>
+      <div class="row timeblock">
+        <span id = "twelvePM" class="hour"></span>
+        <input type="text" class="textarea" data-hour="12" aria-label="Dollar amount (with dot and two decimal places)">
+        <button class="saveBtn">Save</button>
       </div>
-      <div class="input-group mb-3 input-group-lg">
-        <span class="input-group-text">1PM</span>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        <button class="input-group-text">Save</button>
+      <div class="row timeblock">
+        <span id = "onePM" class="hour"></span>
+        <input type="text" class="textarea" data-hour="13" aria-label="Dollar amount (with dot and two decimal places)">
+        <button class="saveBtn">Save</button>
       </div>
-      <div class="input-group mb-3 input-group-lg">
-        <span class="input-group-text">2PM</span>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        <button class="input-group-text">Save</button>
+      <div class="row timeblock">
+        <span id = "twoPM" class="hour"></span>
+        <input type="text" class="textarea" data-hour="14" aria-label="Dollar amount (with dot and two decimal places)">
+        <button class="saveBtn">Save</button>
       </div>
-      <div class="input-group mb-3 input-group-lg">
-        <span class="input-group-text">3PM</span>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        <button class="input-group-text">Save</button>
+      <div class="row timeblock">
+        <span id = "threePM" class="hour"></span>
+        <input type="text" class="textarea" data-hour="15" aria-label="Dollar amount (with dot and two decimal places)">
+        <button class="saveBtn">Save</button>
       </div>
-      <div class="input-group mb-3 input-group-lg">
-        <span class="input-group-text">4PM</span>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        <button class="input-group-text">Save</button>
+      <div class="row timeblock">
+        <span id = "fourPM" class="hour"></span>
+        <input type="text" class="textarea" data-hour="16" aria-label="Dollar amount (with dot and two decimal places)">
+        <button class="saveBtn">Save</button>
       </div>
-      <div class="input-group mb-3 input-group-lg">
-        <span class="input-group-text">5PM</span>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        <button class="input-group-text">Save</button>
+      <div class="row timeblock">
+        <span id = "fivePM" class="hour"></span>
+        <input type="text" class="textarea" data-hour="17" aria-label="Dollar amount (with dot and two decimal places)">
+        <button class="saveBtn saveBtn">Save</button>
       </div>
     </div>
 
