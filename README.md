@@ -19,4 +19,4 @@ An easy to use calendar application for busy individuals. Allows the user to man
 ## Link to deployed page
 https://loganhild.github.io/easy-planner/
 
-![Screenshot (38)](https://user-images.githubusercontent.com/82903685/126528226-35ad8828-25fd-4bd4-9c0f-90d6723fd6a1.png)
+![image](https://user-images.githubusercontent.com/82903685/126529845-97b10c20-1572-4689-bd05-4c606c30e6dc.png)
