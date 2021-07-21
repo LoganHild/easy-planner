@@ -80,3 +80,13 @@ textarea {
 #now {
   font-weight: bold;
 }
+.key {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+#alert {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
