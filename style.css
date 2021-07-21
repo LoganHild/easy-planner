@@ -67,11 +67,9 @@ textarea {
   background-color: #06AED5;
   color: white;
 }
-/*added font color black like the example, made it on hover, it worked better for me*/
 /*deleted the i:hover, didn't know what it was for*/
 .saveBtn:hover {
   font-size: 20px;
-  color: black;
   transition: all .3s ease-in-out;
 }
 
@@ -79,6 +77,6 @@ textarea {
 #currentDay {
   font-weight: bold;
 }
-#currentTime {
+#now {
   font-weight: bold;
 }
