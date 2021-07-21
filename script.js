@@ -1,9 +1,10 @@
 //Must use date utility library to work with date and time!
 //Displays the current date at the top of the calendar.
 var today = moment();
-var currentTime = today.format('LT');
+var now = today.format("LT");
+var currentTime = today.format('H');
 $('#currentDay').text(today.format('dddd Do, YYYY'));
-$('#currentTime').text(currentTime);
+$('#now').text(now);
 
 //When a timeblock is clicked, user can enter an event.
 //using date library to add times, having trouble displaying AM and PM?
@@ -32,18 +33,19 @@ moment([2007, 0, 29]).fromNow();
 //When viewing the timeblocks for that day, each is color coded for past, present, future.
 
 function textareaColor() {
-    $('.textarea').each(function textarea() {
+    $('textarea').each(function textarea() {
         var dataHour = $(this).data("hour");
-        if (currentTime === dataHour) {
+        
+        if (currentTime == dataHour) {
             $(this).addClass('present');
         } else if (currentTime > dataHour) {
             $(this).addClass('past');
         } else if (currentTime < dataHour) {
-            $(this).addClass(future);
+            $(this).addClass('future');
         }
     })
 }
-
+textareaColor();
 //grid
 $('span').addClass("col-lg-1");
 $('textarea').addClass("col-lg-10 description");
@@ -64,7 +66,7 @@ function formSave(event) {
     if (input.val() !== null) {
         $('#alert').text("You have saved an event to localStorage!")
         localStorage.setItem(input.data("hour"),input.val());
-    } 
+    }
 }
 
 save.on('click', formSave);
