@@ -31,7 +31,18 @@ moment([2007, 0, 29]).fromNow();
 
 //When viewing the timeblocks for that day, each is color coded for past, present, future.
 
-
+function textareaColor() {
+    $('.textarea').each(function textarea() {
+        var dataHour = $(this).data("hour");
+        if (currentTime === dataHour) {
+            $(this).addClass('present');
+        } else if (currentTime > dataHour) {
+            $(this).addClass('past');
+        } else if (currentTime < dataHour) {
+            $(this).addClass(future);
+        }
+    })
+}
 
 //grid
 $('span').addClass("col-lg-1");
@@ -59,7 +70,6 @@ function formSave(event) {
 save.on('click', formSave);
 
 //Displaying saved Events.
-
 $('#nine').text(localStorage.getItem("9"));
 $('#ten').text(localStorage.getItem("10"));
 $('#eleven').text(localStorage.getItem("11"));
