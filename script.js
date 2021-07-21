@@ -1,74 +1,71 @@
-//Must use date utility library to work with date and time, example from class and in readme is moment but check links from Nathan due to moment being chopped.
-
-//timeblocks go in <div class = "container"
-//Displays the current date at the top of the calendar--moment website--use the docs.
-
+//Must use date utility library to work with date and time!
+//Displays the current date at the top of the calendar.
 var today = moment();
+var currentTime = today.format('LT');
 $('#currentDay').text(today.format('dddd Do, YYYY'));
+$('#currentTime').text(currentTime);
 
-//create timeblocks
-//When a timeblock is clicked, user can enter an event--probably bootstrap.
-var time = today.format("9");
-$("#nineAM").text(time);
-var time = today.format("10");
-$("#tenAM").text(time);
-var time = today.format("11");
-$("#elevenAM").text(time);
-var time = today.format("12 A");
-$("#twelvePM").text(time);
-var time = today.format("1 A");
-$("#onePM").text(time);
-var time = today.format("2 A");
-$("#twoPM").text(time);
-var time = today.format("3 A");
-$("#threePM").text(time);
-var time = today.format("4 A");
-$("#fourPM").text(time);
-var time = today.format("5 A");
-$("#fivePM").text(time);
+//When a timeblock is clicked, user can enter an event.
+//using date library to add times, having trouble displaying AM and PM?
+var nine = today.hour(9).minute(0).format("H:mm")
+$("#nineAM").text(nine);
+var ten = today.hour(10).minute(0).format("HH:mm");
+$("#tenAM").text(ten);
+var eleven = today.hour(11).minute(0).format("HH:mm");
+$("#elevenAM").text(eleven);
+var twelve = today.hour(12).minute(0).format("HH:mm");
+$("#twelvePM").text(twelve);
+var one = today.hour(1).minute(0).format("H:mm");
+$("#onePM").text(one);
+var two = today.hour(2).minute(0).format("H:mm");
+$("#twoPM").text(two);
+var three = today.hour(3).minute(0).format("H:mm");
+$("#threePM").text(three);
+var four = today.hour(4).minute(0).format("H:mm");
+$("#fourPM").text(four);
+var five = today.hour(5).minute(0).format("H:mm");
+$("#fivePM").text(five);
+function test() {
+moment([2007, 0, 29]).fromNow();
+}
 
-//When viewing the timeblocks for that day, each is color coded for past, present, future---moment+jquery?+maybe bootstrap I don't know.
+//When viewing the timeblocks for that day, each is color coded for past, present, future.
 
 
 
 //grid
 $('span').addClass("col-lg-1");
-$('input').addClass("col-lg-10");
-$('button').addClass("col-lg-1 alert-success");
-
+$('textarea').addClass("col-lg-10 description");
+$('button').addClass("col-lg-1");
 
 //changing save button on mouseover
 $('.alert-success').on('mouseenter mouseleave', function(event) {
     $(this).addClass("alert-success");
 })
 
-//save button for timeblock, for saving event to local storage, maybe need to get it on page load or something? will use JSON
-
+//save button for timeblock, for saving event to local storage
 var save = $('button');
 
 function formSave(event) {
     event.preventDefault();
-    console.log($(this).siblings(".textarea").data("hour"));
 
     var input = $(this).siblings(".textarea");
-    console.log(event)
     if (input.val() !== null) {
-        
+        $('#alert').text("You have saved an event to localStorage!")
         localStorage.setItem(input.data("hour"),input.val());
-        // localStorage.getItem('event');
-    }
-
+    } 
 }
-
 
 save.on('click', formSave);
 
+//Displaying saved Events.
 
-
-//When refreshed, the saved events persist.
-
-function renderEvents() {
-    
-    
-}
-renderEvents();
+$('#nine').text(localStorage.getItem("9"));
+$('#ten').text(localStorage.getItem("10"));
+$('#eleven').text(localStorage.getItem("11"));
+$('#twelve').text(localStorage.getItem("12"));
+$('#one').text(localStorage.getItem("13"));
+$('#two').text(localStorage.getItem("14"));
+$('#three').text(localStorage.getItem("15"));
+$('#four').text(localStorage.getItem("16"));
+$('#five').text(localStorage.getItem("17"));

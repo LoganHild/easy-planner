@@ -29,54 +29,56 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <!--created a currentTime to see if I can use for time change-->
+      <p id = "currentTime"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <!--displays timeblocks for standard business hours-->
+      <!--displays timeblocks for 9-5 business hours-->
+      <div id="alert"></div>
       <div class = "row timeblock">
         <span id = "nineAM" class="hour"></span>
-        <input type="text" class="textarea past" data-hour="9" aria-label="Dollar amount (with dot and two decimal places)">
-        <!--changed class to have alert green color from bootstrap alerts, changed bottom span to button(for all)-->
+        <textarea id="nine" class="textarea" data-hour="9"></textarea>
         <button class="saveBtn i">Save</button>
       </div>
       <div class="row timeblock">
         <span id = "tenAM" class="hour"></span>
-        <input type="text" class="textarea present" data-hour="10" aria-label="Dollar amount (with dot and two decimal places)">
+        <textarea id="ten" class="textarea" data-hour="10"></textarea>
         <button class="saveBtn">Save</button>
       </div>
       <div class="row timeblock">
         <span id = "elevenAM" class="hour"></span>
-        <input type="text" class="textarea future" data-hour="11"  aria-label="Dollar amount (with dot and two decimal places)">
+        <textarea id="eleven" class="textarea" data-hour="11"></textarea>
         <button class="saveBtn">Save</button>
       </div>
       <div class="row timeblock">
         <span id = "twelvePM" class="hour"></span>
-        <input type="text" class="textarea" data-hour="12" aria-label="Dollar amount (with dot and two decimal places)">
+        <textarea id="twelve" class="textarea" data-hour="12"></textarea>
         <button class="saveBtn">Save</button>
       </div>
       <div class="row timeblock">
         <span id = "onePM" class="hour"></span>
-        <input type="text" class="textarea" data-hour="13" aria-label="Dollar amount (with dot and two decimal places)">
+        <textarea id="one" class="textarea" data-hour="13"></textarea>
         <button class="saveBtn">Save</button>
       </div>
       <div class="row timeblock">
         <span id = "twoPM" class="hour"></span>
-        <input type="text" class="textarea" data-hour="14" aria-label="Dollar amount (with dot and two decimal places)">
+        <textarea id="two" class="textarea" data-hour="14"></textarea>
         <button class="saveBtn">Save</button>
       </div>
       <div class="row timeblock">
         <span id = "threePM" class="hour"></span>
-        <input type="text" class="textarea" data-hour="15" aria-label="Dollar amount (with dot and two decimal places)">
+        <textarea id="three" class="textarea" data-hour="15"></textarea>
         <button class="saveBtn">Save</button>
       </div>
       <div class="row timeblock">
         <span id = "fourPM" class="hour"></span>
-        <input type="text" class="textarea" data-hour="16" aria-label="Dollar amount (with dot and two decimal places)">
+        <textarea id="four" class="textarea" data-hour="16"></textarea>
         <button class="saveBtn">Save</button>
       </div>
       <div class="row timeblock">
         <span id = "fivePM" class="hour"></span>
-        <input type="text" class="textarea" data-hour="17" aria-label="Dollar amount (with dot and two decimal places)">
+        <textarea id="five" class="textarea" data-hour="17"></textarea>
         <button class="saveBtn saveBtn">Save</button>
       </div>
     </div>

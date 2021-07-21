@@ -4,7 +4,7 @@ body {
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -74,6 +74,11 @@ textarea{
   color: black;
   transition: all .3s ease-in-out;
 }
+
+/*added some CSS to make more visible*/
 #currentDay {
+  font-weight: bold;
+}
+#currentTime {
   font-weight: bold;
 }
