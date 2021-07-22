@@ -7,29 +7,6 @@ $('#currentDay').text(today.format('dddd Do, YYYY'));
 $('#now').text(now);
 
 //When a timeblock is clicked, user can enter an event.
-//using date library to add times, having trouble displaying AM and PM?
-var nine = today.hour(9).minute(0).format("H:mm")
-$("#nineAM").text(nine);
-var ten = today.hour(10).minute(0).format("HH:mm");
-$("#tenAM").text(ten);
-var eleven = today.hour(11).minute(0).format("HH:mm");
-$("#elevenAM").text(eleven);
-var twelve = today.hour(12).minute(0).format("HH:mm");
-$("#twelvePM").text(twelve);
-var one = today.hour(1).minute(0).format("H:mm");
-$("#onePM").text(one);
-var two = today.hour(2).minute(0).format("H:mm");
-$("#twoPM").text(two);
-var three = today.hour(3).minute(0).format("H:mm");
-$("#threePM").text(three);
-var four = today.hour(4).minute(0).format("H:mm");
-$("#fourPM").text(four);
-var five = today.hour(5).minute(0).format("H:mm");
-$("#fivePM").text(five);
-function test() {
-moment([2007, 0, 29]).fromNow();
-}
-
 //When viewing the timeblocks for that day, each is color coded for past, present, future.
 
 function textareaColor() {
@@ -46,6 +23,7 @@ function textareaColor() {
     })
 }
 textareaColor();
+
 //grid
 $('span').addClass("col-lg-1");
 $('textarea').addClass("col-lg-10 description");
