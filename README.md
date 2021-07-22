@@ -11,11 +11,13 @@ An easy to use calendar application for busy individuals. Allows the user to man
 * After an event is entered, click the save (💾) button next to the event to be saved.
 * At the top of the timeblocks, a message will appear letting the user know the event has been saved to localStorage.
 * To remove events the user may delete the current event and save (💾) the blank timeblock.
-* Once all events for the events for the day have been saved they will remain in that timeblock, even if the user refreshes or exits the page.
+* Once all events for the day have been saved they will remain in that timeblock, even if the user refreshes or exits the page.
 * As the time goes by, the background colors of the block will change by the hour according to past, present, and future.
+* Also included a small table at the beginning to show the user what each color represents if they don't see this description
 * gray = past
 * red = present
 * green = future
+
 ## Link to deployed page
 https://loganhild.github.io/easy-planner/
 
