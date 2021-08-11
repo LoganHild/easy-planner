@@ -3,6 +3,15 @@
 ## Description
 An easy to use calendar application for busy individuals. Allows the user to manage their time efficiently by saving important events for each hour of the day. Once an event is saved to the local storage, it will remain in the chosen timeslot until the user changes the event. Each timeslot will also display a color depicting if the time of the event has passed, if it is the current time of the event, or if the event is at a future time. 
 
+## Technologies Used
+* HTML
+* CSS
+* JavaScript
+* jQuery
+* Google Fonts
+* Bootstrap
+* Moment.js
+
 ## Usage
 * At the top of the page, the current date and time is displayed for reference.
 * When the user scrolls down, they will see timeblocks for a typical 9-5 work day.
