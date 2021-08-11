@@ -1,4 +1,4 @@
-# easy-planner
+# Easy Planner
 
 ## Description
 An easy to use calendar application for busy individuals. Allows the user to manage their time efficiently by saving important events for each hour of the day. Once an event is saved to the local storage, it will remain in the chosen timeslot until the user changes the event. Each timeslot will also display a color depicting if the time of the event has passed, if it is the current time of the event, or if the event is at a future time. 
@@ -22,3 +22,11 @@ An easy to use calendar application for busy individuals. Allows the user to man
 https://loganhild.github.io/easy-planner/
 
 ![Screenshot (41)](https://user-images.githubusercontent.com/82903685/126584885-e78fb6c5-eba6-40aa-bdd2-794206557c24.png)
+
+![2021-08-11 (3)](https://user-images.githubusercontent.com/82903685/128995240-76a5be1b-a4bb-4aa1-8533-42082b1357ac.png)
+
+## License
+Licensed under [MIT License}(LICENSE)
+
+## Contact
+Logan Hildebrandt- hildebrandtlogan@gmail.com
