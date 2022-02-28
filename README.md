@@ -38,4 +38,8 @@ https://loganhild.github.io/easy-planner/
 Licensed under [MIT License}(LICENSE)
 
 ## Contact
-Logan Hildebrandt- hildebrandtlogan@gmail.com
+  Email: <hildebrandtlogan@gmail.com>
+
+  Github: <https://github.com/LoganHild>
+  
+  LinkedIn: <https://www.linkedin.com/in/loganahildebrandt/>
